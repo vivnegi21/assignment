@@ -6,7 +6,7 @@ const Menubar = () => {
   const activeLink = localStorage.getItem('linkbar');
 
   return (
-    <div className='py-4 p-3 flex mx-auto flex-col gap-4 w-full h-full sticky'>
+    <div className='py-4 p-3 flex mx-auto flex-col gap-4 w-full min-h-screen'>
       <h1 className='text-[#FF6666] text-4xl text-center font-bold'>Womb</h1>
       <div className='gap-2  flex-col mx-auto'>
         <div className='rounded-full w-1/2 h-1/2 mx-auto'>
@@ -18,13 +18,13 @@ const Menubar = () => {
         <hr className='h-px bg-gray border-0'/>
 
       <div className='flex-col gap-4'>
-        <Link to='/' onClick={()=>localStorage.setItem('linkbar','admin')}>
+        <Link to='/dashboard/admin' onClick={()=>localStorage.setItem('linkbar','admin')}>
           <p className={`p-3 w-full text-white rounded-lg text-lg text-center flex gap-2 ${(activeLink==='admin')? 'bg-[#FF6666]' :''}`}>
           <UserRound/>
             Admin Management
           </p>
         </Link>
-        <Link to='/roles' onClick={()=>localStorage.setItem('linkbar','roles')}>
+        <Link to='/dashboard/roles' onClick={()=>localStorage.setItem('linkbar','roles')}>
           <p className={`p-3 w-full text-white rounded-lg text-lg text-center flex gap-2 ${(activeLink==='roles')? 'bg-[#FF6666]' :''}`}>
           <UserCog2 />Role Management
           </p>

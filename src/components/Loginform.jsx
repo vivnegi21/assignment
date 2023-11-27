@@ -23,7 +23,7 @@ const Login = () => {
         if (formData['email'] === 'vivek@idh.in' && formData['password'] === 'vivek@idh') {
             sessionStorage.setItem("isLoggedIn", true);
             localStorage.setItem('linkbar','admin');
-            navigate('/')
+            navigate('/dashboard/admin')
         }else{
             alert('Invalid Credentials');
         }

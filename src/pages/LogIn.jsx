@@ -6,7 +6,7 @@ const Home = () => {
     const navigate = useNavigate();
     useEffect(()=>{
         let isLoggedIn = sessionStorage.getItem('isLoggedIn');
-        if(isLoggedIn) navigate('/');
+        if(isLoggedIn) navigate('/dashboard/admin ');
     })
     return (
         <div className='flex h-full'>

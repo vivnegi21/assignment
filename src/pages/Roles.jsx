@@ -20,7 +20,7 @@ const Roles = () => {
             </div>
             {/* Panel */}
             <div className='w-full h-screen flex-col p-3 gap-8'>
-                <TopPanel name='Admin' />
+                <TopPanel name='Role' />
                 <SearchBar />
                 <RoleTable />
             </div>
