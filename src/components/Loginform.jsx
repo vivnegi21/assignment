@@ -1,9 +1,14 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+import { Eye, EyeOff, KeyRound, Mail } from 'lucide-react'
+
+//images
 import logo from '../assets/icon.png'
 import smiley from '../assets/smiley.png'
-import { Eye, EyeOff, KeyRound, Mail } from 'lucide-react'
-import { useNavigate } from 'react-router-dom';
-const Login = () => {
+
+
+const Loginform = () => {
+    //hooks
     const navigate = useNavigate();
 
     const [formData, setFormData] = useState({});
@@ -22,7 +27,6 @@ const Login = () => {
         e.preventDefault();
         if (formData['email'] === 'vivek@idh.in' && formData['password'] === 'vivek@idh') {
             sessionStorage.setItem("isLoggedIn", true);
-            localStorage.setItem('linkbar','admin');
             navigate('/dashboard/admin')
         }else{
             alert('Invalid Credentials');
@@ -31,14 +35,12 @@ const Login = () => {
 
     return (
         <div className=' mt-24 mx-auto  flex flex-col items-center justify-center gap-4'>
-            <div className='absolute top-14 left-10'>
-                <img src={smiley} alt="smiley" />
-            </div>
-            <div>
-                <img src={logo} alt="logo" />
-            </div>
+            <div className='absolute top-14 left-10'><img src={smiley} alt="smiley" /></div>
+            <div><img src={logo} alt="logo" /></div>
             <h1 className='text-xl text-[#0A3055] mt-4'>Login to your account</h1>
 
+            {/* form */}
+            
             <form action="" className='flex flex-col gap-4 mt-8 items-start p-3' onSubmit={onSubmit}>
                 <div className='flex items-center'>
                     <Mail className='-mr-10 z-10' />
@@ -53,7 +55,7 @@ const Login = () => {
                         }
                     </div>
                 </div>
-                <p className='text-[#0A3055] text-sm -ml-4'>Forget Password?</p>
+                <p className='text-[#0A3055] text-sm -ml-4 cursor-pointer'>Forget Password?</p>
                 <button className='bg-[#F66] w-96 p-3 rounded-lg -ml-4 text-white mt-10'>
                     Login
                 </button>
@@ -63,4 +65,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Loginform

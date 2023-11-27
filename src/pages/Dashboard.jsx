@@ -1,14 +1,14 @@
-import  Menubar  from '../components/Menubar';
 import React, { useEffect } from 'react'
 import { Outlet, useNavigate } from 'react-router-dom'
+import  Menubar  from '../components/Menubar';
 
 const Dashboard = () => {
     const navigate = useNavigate();
     useEffect(()=>{
         const isLogged = sessionStorage.getItem('isLoggedIn');
-        if(!isLogged) return navigate('/log-in');
-        
+        if(!isLogged) return navigate('/');
     })
+
     return (
     <div className='flex w-full h-full'>
         {/* Sidebar */}
