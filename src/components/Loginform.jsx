@@ -51,7 +51,7 @@ const Loginform = () => {
                     <input type={password ? "password" : "text"} placeholder='Password' className=' border p-3 rounded-lg w-96 pl-12 border-[#0A3055] ' id='password' onChange={handleChange} />
                     <div className='-ml-10 cursor-pointer'>
                         {
-                            password ? <Eye onClick={handleToggle} /> : <EyeOff onClick={handleToggle} />
+                            password ? <EyeOff onClick={handleToggle} /> : <Eye onClick={handleToggle} />
                         }
                     </div>
                 </div>
