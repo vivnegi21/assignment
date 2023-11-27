@@ -10,9 +10,9 @@ const Dashboard = () => {
     })
 
     return (
-    <div className='flex w-full h-full'>
+    <div className='flex w-full h-full max-lg:flex-col'>
         {/* Sidebar */}
-        <div className='w-[20%] bg-[#0A3055]'>
+        <div className='lg:w-[20%] bg-[#0A3055]'>
             <Menubar/>
         </div>
         {/* Panel */}

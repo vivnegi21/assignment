@@ -7,10 +7,10 @@ import SearchBar from './SearchBar'
 
 const AdminTable = () => {
     return (
-        <div className='rounded-lg mx-5 h-full shadow-2xl mt-5'>
+        <div className='rounded-lg mx-5 h-full shadow-2xl mt-5 max-lg:text-xs '>
             <TopPanel name='Admin' />
             <SearchBar />
-            <div className='flex gap-4 justify-around items-center w-full border-b-1 p-2 h-fit mt-9 font-bold' id='table-header'>
+            <div className='flex gap-4 justify-around items-center w-full border-b-1 p-2 h-fit mt-9 font-bold max-lg:w-screen' id='table-header'>
                 <div>Full Name</div>
                 <div>Email</div>
                 <div>Contact No.</div>

@@ -12,12 +12,12 @@ const Home = () => {
     })
 
     return (
-        <div className='flex h-full'>
+        <div className='flex h-full max-lg:flex-col'>
 
           {/* login */}
-          <div className='w-[40%]'><Loginform/></div>
+          <div className='lg:w-[40%]'><Loginform/></div>
           {/* Image */}
-          <div className='h-screen w-[60%]'><img src={image_icon} alt="icon2" className='w-full h-full' /></div>
+          <div className='md:h-screen lg:w-[60%]'><img src={image_icon} alt="icon2" className='w-full h-full' /></div>
 
         </div>
       );
