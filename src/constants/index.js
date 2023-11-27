@@ -1,4 +1,37 @@
-export const admin = [
+
+export const userList = [
+    {
+        "name":'Jenny Wilson',
+        "image":'../assets/image.png',
+        "email":"jennywilson@gmail.com",
+        "contact":'+91 123 456 7890',
+        "role": 'Role management',
+        "status": 'Active',
+    },
+    {
+        "name":'John Doe',
+        "image":'../assets/image.png',
+        "email":"johndoe@gmail.com",
+        "contact":'+91 123 456 7890',
+        "role": 'User Management',
+        "status": 'Inactive',
+    },
+    {
+        "name":'Jenny Wilson',
+        "image":'../assets/image.png',
+        "email":"jennywilson@gmail.com",
+        "contact":'+91 123 456 7890',
+        "role": 'Role management',
+        "status": 'Active',
+    },
+    {
+        "name":'John Doe',
+        "image":'../assets/image.png',
+        "email":"johndoe@gmail.com",
+        "contact":'+91 123 456 7890',
+        "role": 'User Management',
+        "status": 'Inactive',
+    },
     {
         "name":'Jenny Wilson',
         "image":'../assets/image.png',

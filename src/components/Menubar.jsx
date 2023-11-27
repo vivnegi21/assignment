@@ -6,7 +6,7 @@ const Menubar = () => {
   const activeLink = localStorage.getItem('linkbar');
 
   return (
-    <div className='py-4 p-3 flex mx-auto flex-col gap-4 w-full'>
+    <div className='py-4 p-3 flex mx-auto flex-col gap-4 w-full h-full sticky'>
       <h1 className='text-[#FF6666] text-4xl text-center font-bold'>Womb</h1>
       <div className='gap-2  flex-col mx-auto'>
         <div className='rounded-full w-1/2 h-1/2 mx-auto'>

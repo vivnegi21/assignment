@@ -2,7 +2,7 @@ import React from 'react'
 import banner from '../assets/banner-image.png'
 const TopPanel = ({ name }) => {
     return (
-        <div className='pl-9 rounded-lg mx-5 h-fit py-5' style={{
+        <div className='pl-9 rounded-lg mx-5 h-fit py-4' style={{
             backgroundImage: `linear-gradient(45deg, 
                 rgba(255,255,255,0.8), 
                 rgba(8,83,156, 0.0)),url(${banner})`,

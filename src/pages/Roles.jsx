@@ -2,6 +2,9 @@ import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 import Menubar from '../components/Menubar';
 import TopPanel from '../components/TopPanel';
+import SearchBar from '../components/SearchBar';
+import AdminTable from '../components/AdminTable';
+import RoleTable from '../components/RoleTable';
 
 const Roles = () => {
     const navigate = useNavigate();
@@ -16,8 +19,10 @@ const Roles = () => {
                 <Menubar />
             </div>
             {/* Panel */}
-            <div className='w-full h-screen flex-col p-3 gap-4'>
-            <TopPanel name='Role'/>
+            <div className='w-full h-screen flex-col p-3 gap-8'>
+                <TopPanel name='Admin' />
+                <SearchBar />
+                <RoleTable />
             </div>
         </div>
     )

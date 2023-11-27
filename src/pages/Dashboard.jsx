@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import TopPanel from '../components/TopPanel';
 import SearchBar from '../components/SearchBar';
+import AdminTable from '../components/AdminTable';
 
 const Dashboard = () => {
     const navigate = useNavigate();
@@ -17,10 +18,10 @@ const Dashboard = () => {
             <Menubar/>
         </div>
         {/* Panel */}
-        <div className='w-full h-screen flex-col p-3 gap-4'>
+        <div className='w-full h-screen flex-col p-3 gap-8'>
             <TopPanel name='Admin'/>
             <SearchBar/>
-            
+            <AdminTable/>
         </div>
     </div>
   )
