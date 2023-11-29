@@ -30,7 +30,7 @@ const Loginform = () => {
             navigate('/dashboard/admin')
         }else{
             alert('Invalid Credentials');
-            alert({`Use Email: 'vivek@idh.in' and password: 'vivek@idh'}`);
+            alert("Use Email: 'vivek@idh.in' and password: 'vivek@idh'");
         }
     };
 
